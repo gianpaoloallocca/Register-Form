@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>Registrati - gianpaoloallocca</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <div class="main">
+            <section class="signup">
+                <div class="container">
+                    <div class="signup-content">
+                        <div class="signup-form">
+                            <h2 class="form-title">Registrati</h2>
+                            <form method="POST" action="php/form.php" class="register-form" id="register-form">
+                                <div class="form-group">
+                                    <label for="nome"><span class="material-symbols-outlined">face</span></label>
+                                    <input type="text" name="nome" id="nome" placeholder="Nome" minlength="5" required />
+                                </div>
+                                <div class="form-group">
+                                    <label for="cognome"><span class="material-symbols-outlined">face</span></label>
+                                    <input type="text" name="cognome" id="cognome" placeholder="Cognome" minlength="5" required />
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="email"><span class="material-symbols-outlined">alternate_email</span></label>
+                                    <input type="email" name="email" id="email" placeholder="Indirizzo Email" minlength="5" required />
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="pass"><span class="material-symbols-outlined">password</span></label>
+                                    <input type="password" name="password" id="pass" placeholder="Password" minlength="5" required />
+                                    <span class="password-toggle-icon" onclick="togglePasswordVisibility()"><span id="password-icon" class="material-symbols-outlined">visibility_off</span></span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="ntel"><span class="material-symbols-outlined">call</span></label>
+                                    <input type="tel" name="ntel" id="ntel" pattern="[0-9]{10}" minlength="10" maxlength="10" placeholder="Numero Telefonico" />
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="data_nascita"><span class="material-symbols-outlined">calendar_month</span></label>
+                                    <input type="date" name="data_nascita" id="data_nascita" />
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" required />
+                                    <label for="agree-term" class="label-agree-term">Accetto i termini e le condizioni d'uso</label>
+                                </div>
+
+                                <div class="form-group form-button">
+                                    <input type="submit" name="signup" id="signup" class="form-submit" value="Registrati" />
+                                </div>
+                            </form>
+                        </div>
+                        <div class="signup-image">
+                            <img src="assets/signup-image.jpg" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <script src="js/index.js"></script>
+    </body>
+</html>
